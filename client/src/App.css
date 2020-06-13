@@ -7,7 +7,10 @@ body{
     background-color: rgb(245,245,245);
 }
 .container{
-  margin:80px auto 0 auto;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   max-width: 1200px;
 }
 .nav-container{
