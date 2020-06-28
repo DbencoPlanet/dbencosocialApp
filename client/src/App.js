@@ -27,6 +27,8 @@ import axios from 'axios';
 
 const theme = createMuiTheme(themeFile);
 
+axios.defaults.baseURL = 'https://us-central1-dbencosocial-76a2b.cloudfunctions.net/api';
+
 
 const token = localStorage.FBIdToken;
 if(token){

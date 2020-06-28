@@ -24,8 +24,7 @@ const styles = (theme) => ({
 class Comments extends Component {
  
   render() {
-
-    const { comments, classes } = this.props;
+    const {comments,classes } = this.props;
     //const comments = this.props.comments;
     //const classes = this.props.classes;
 

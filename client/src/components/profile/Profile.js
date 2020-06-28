@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import dayjs from "dayjs";
 import EditDetails from "./EditDetails.js";
 import MyButton from "../../util/MyButton";
+import ProfileSkeleton from '../../util/ProfileSkeleton';
 
 //Redux Stuff
 import { connect } from "react-redux";
@@ -18,7 +19,7 @@ import Paper from "@material-ui/core/Paper";
 //import IconButton from '@material-ui/core/IconButton';
 
 // Icons
-import LoactionOn from "@material-ui/icons/LocationOn";
+import LocationOn from "@material-ui/icons/LocationOn";
 import LinkIcon from "@material-ui/icons/Link";
 import CalendarToday from "@material-ui/icons/CalendarToday";
 import EditIcon from "@material-ui/icons/Edit";
@@ -89,7 +90,7 @@ class Profile extends Component {
               <hr />
               {location && (
                 <Fragment>
-                  <LoactionOn color="primary" /> <span>{location}</span>
+                  <LocationOn color="primary" /> <span>{location}</span>
                   <hr />
                 </Fragment>
               )}
@@ -138,7 +139,7 @@ class Profile extends Component {
         </Paper>
       )
     ) : (
-      <p>loading</p>
+      <ProfileSkeleton/>
     );
     return profileMarkup;
   }

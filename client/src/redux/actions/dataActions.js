@@ -117,7 +117,7 @@ export const submitComment = (screamId, commentData) => (dispatch) => {
     });
 };
 
-// delete sccream
+// delete scream
 export const deleteScream = (screamId) => (dispatch) => {
   axios
     .delete(`/scream/${screamId}`)
